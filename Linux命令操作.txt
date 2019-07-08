@@ -1,1 +1,6 @@
-1.电源管理命令：poweroff(关机) reboot（重启) shutdown（关机或重启） 
+1.电源管理命令:poweroff(关机) reboot（重启) shutdown（关机或重启) - r(重启) - h（关机）
+man（手册）
+su root :切换root用户
+2.网络配置命令:ifconfig(查看网络配置信息)  ping(检查网络联通性)
+禁用/启用以太网卡: ifconfig 网卡名 down/Up
+修改ip地址:  ifconfig 网卡名 IP 临时性修改，重启就可以还原
