@@ -1,0 +1,1 @@
+1.电源管理命令：poweroff(关机) reboot（重启) shutdown（关机或重启） 
