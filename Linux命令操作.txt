@@ -23,3 +23,10 @@ jobs:查看当前终端中有多少个进程在后台
 
 永久修改ip地址:找到ifcfg-eth0配置文件,vi进入文件内部进行修改
 修改BOOTPROTO的参数为static，然后创建两个新参数IPADDR和NETMASK
+
+4.用户和组群管理命令
+进入root用户后再操作
+组群管理命令：创建组群 groupadd 用户名
+            删除组群 groupdel 用户名
+            修改组群 groupmod -n 新用户名 用户名
+            修改id和用户名 groupmod -g id -n 新用户名 用户名
