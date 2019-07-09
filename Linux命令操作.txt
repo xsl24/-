@@ -20,3 +20,6 @@ jobs:查看当前终端中有多少个进程在后台
 杂项命令：
     reset:重置终端
     clear:清屏
+
+永久修改ip地址:找到ifcfg-eth0配置文件,vi进入文件内部进行修改
+修改BOOTPROTO的参数为static，然后创建两个新参数IPADDR和NETMASK
