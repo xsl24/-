@@ -84,3 +84,47 @@ vi是一款基于CUI的文本编辑器,有两种模式,命令模式和插入模�
 查看普通文件: vi ,cat(将文件内容全部打印),more(浏览器控制),head(查看开头10行内容),tail(查看末尾10行内容)
 拷贝普通文件: cp
 移动普通文件: mv
+
+scp:在同一局域网中的不同主机进行拷贝   scp -r ./到此一游 tan_wl@192.168.1.168:/home/tan_wl/
+
+文件的打包和压缩:
+打包: tar -cvf bbb.tar  ./aaa
+解包: tar -xvf bbb.tar -C 解压位置
+查看包: tar -tvf bbb.bar
+压缩目录: tar -zcvf ccc.tar.gz ./aaa 或 -jcvf ddd.tar.bz2 ./aaa 或 zip -r aaa.zip ./aaa
+解压: tar -zxvf ccc.tar.gz 或 tar -jxvf ddd.tar.bz2 或 unzip aaa.zip
+查看压缩包: tar -ztvf ccc.tar.gz 或 tar -jtvf ddd.tar.bz2 或 unzip -v aaa.zip
+
+Linux的文件系统:
+bin: 存放普通用户使用的可执行文件
+sbin: 存放root用户使用的命令
+boot:存放系统启动相关的文件
+dev:存放设备驱动文件
+etc:存放系统配置文件
+home:存放普通用户的主目录
+lib:存放库文件
+mnt:存放用户挂载设备
+opt:用于存放软件的安装目录
+proc:用于存放临时文件,例如:CPU的使用情况
+root:root用户的主目录
+selinux:存放seLinux的配置文件(selinux是Linux系统的防护程序)
+sys:存放系统的配置
+pwd:查看当前目录的绝对路径
+which:查看命令的路径
+alias:给命令重命名
+find:查找文件
+grep:在文件中查找行  grep 查找内容  文件名 grep eth  def.txt
+awk:在文件中查找列   awk 查找内容  文件名   awk '{print $1,$2}' def.txt
+.(点号)或source : 将文件中的命令从上到下执行一遍
+
+6.服务管理命令:
+service 服务器名 stop/start/restart   停止/开启/重启服务
+例如: service iptables start 开启防火墙服务
+
+环境变量: 一些命令的路径
+查看环境变量: env 
+打印环境变量: echo $环境变量名
+添加环境变量: export PATH=/sbin
+清空环境变量: unset PATH
+
+
